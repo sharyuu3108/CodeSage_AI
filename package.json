@@ -1,0 +1,20 @@
+{
+  "name": "codesage-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CodeSage AI: An AI-powered developer platform for code review, static analysis, optimization, and conversion.",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "npm --prefix frontend run build",
+    "test:backend": "npm --prefix backend test",
+    "dev:server": "npm run dev:backend",
+    "dev:client": "npm run dev:frontend",
+    "build:client": "npm run build:frontend",
+    "test:server": "npm run test:backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
